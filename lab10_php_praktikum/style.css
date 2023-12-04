@@ -1,0 +1,168 @@
+/* CSS */
+:root {
+    --magenta: #b55163;
+    --pink: #f8d6d9;
+    --blue: #95b4cc;
+    --white: #ffffff;
+    --purple: #8258a2;
+    --darkblue: #2a5b7f;
+    --beige: #faf8f1;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+    color: var(--magenta);
+    display: flex;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #cccccc;
+    background-color: var(--pink);
+}
+ 
+/* header */
+header {
+    padding: 10px;
+    background-color: var(--white);
+}
+
+header h1 {
+    margin: 10px 10px;
+    color: var(--purple);
+}
+ 
+/* navigasi */
+nav {
+    display: block;
+    background-color: var(--blue);
+}
+
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: var(--magenta);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: var(--purple);
+    color: var(--white);
+}
+ 
+/* Content Panel */
+.content {
+    background-color: var(--pink);
+    padding: 50px 30px;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-style: italic;
+    color: var(--darkblue);
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+ 
+/* tabel */
+body{
+    font-family: sans-serif;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+    border-radius: 20%;
+}
+
+th, td{
+    border: 1px solid var(--beige);
+    font-size: 16px;
+    padding: 15px 15px;
+}
+
+table th {
+    background: var(--magenta);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+table tr {
+    background: var(--white);
+    color: var(--darkblue);
+    font-weight: 500;
+}
+ 
+/* Tambah Barang */
+.input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.input label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    margin-right: 50px;
+    font-weight: bold;
+}
+.input input[type="text"], form textarea {
+    height: 12px;
+    border: 1px solid rgb(66, 66, 66);
+    padding: 5px;
+}
+.submit input{
+    border: 1px solid var(--white);
+    background-color: var(--darkblue);
+    color: var(--white);
+    padding: 5px 15px;
+    margin-top: 5px;
+    margin-left: 170px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit input:hover {
+    background-color: var(--blue);
+    color: var(--darkblue);
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: var(--blue);
+    padding: 20px;
+    color: var(--magenta);
+    text-align: center;
+}
+
+footer p {
+    color: var(--magenta);
+    font-weight: 700;
+}
+
+footer a {
+    color: var(--white);
+    font-weight: 700;
+}
